@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "demo",
+			"path": "../../../Downloads/Ejercicio 23 jamon/demo"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}

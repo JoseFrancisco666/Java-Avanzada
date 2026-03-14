@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Resultado</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>¡Oferta Aplicada!</h1>
+
+<p>El precio final después del descuento es:</p>
+
+<h2 class="precio">
+$ <span th:text="${resultado}">0</span>
+</h2>
+
+<a href="/">Volver a calcular</a>
+
+</div>
+
+</body>
+
+</html>

@@ -1,22 +1,81 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #34ca55;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+/* Fondo de la página ( calculadora) */
+body{
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
 }
 
-.container {
-    background: green;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
+
+.container{
+    width:380px;
+    margin:100px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.2);
+    text-align:center;
 }
 
-h1 {
-    color: #12aa27;
-    font-size: 4rem;
+
+h1{
+    color:#333;
+}
+
+h2{
+    color:#444;
+}
+
+/* Texto de la pagina */
+p{
+    color:#555;
+    font-size:15px;
+}
+
+
+input{
+    width:90%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:14px;
+}
+
+/* Botón para la calculadora */
+button{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    padding:10px;
+    width:95%;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+button:hover{
+    background:#3f9442;
+}
+
+/* Resultado o precio final */
+.precio{
+    color:#e67e22;
+    font-size:30px;
+    margin:20px 0;
+}
+
+/* Botón para volver a la anterior */
+a{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    background:#3498db;
+    color:white;
+    padding:8px 15px;
+    border-radius:6px;
+}
+
+a:hover{
+    background:#2c80b9;
 }
