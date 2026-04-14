@@ -6,7 +6,7 @@ FROM eclipse-temurin:17-jdk AS builder
 WORKDIR /app
 
 # Copiamos el "wrapper" de Maven y el archivo pom.xml primero para aprovechar el caché de Docker
-COPY .mvn/ .mvn
+
 COPY mvnw pom.xml ./
 
 # Descargamos las dependencias (esto ahorra tiempo en futuras construcciones)
