@@ -1,0 +1,4 @@
+com\calculadora\app\controller\CalculadoraController.class
+com\calculadora\app\repository\OperacionRepository.class
+com\calculadora\app\AppApplication.class
+com\calculadora\app\model\Operacion.class
