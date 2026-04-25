@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>E-Commerce Pepe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h1>Inventario de Ropa</h1>
+    
+    <form th:action="@{/guardar}" th:object="${nuevoProducto}" method="post" class="mb-4">
+        <input type="text" th:field="*{nombre}" placeholder="Nombre del producto" class="form-control mb-2" required>
+        <input type="number" th:field="*{precio}" placeholder="Precio" class="form-control mb-2" required>
+        <button type="submit" class="btn btn-primary">Agregar Producto</button>
+    </form>
+
+    <hr>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="p : ${productos}">
+                <td th:text="${p.id}"></td>
+                <td th:text="${p.nombre}"></td>
+                <td th:text="'$' + ${p.precio}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
