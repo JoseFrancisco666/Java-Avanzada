@@ -80,7 +80,7 @@
         const ciudad = document.getElementById('selCiudad').value;
         const dias = document.getElementById('numDias').value;
         try {
-            const res = await fetch(`http://localhost:8080/api/itinerario?ciudad=${ciudad}&dias=${dias}`);
+            const res = await fetch(`/api/itinerario?ciudad=${ciudad}&dias=${dias}`);
             const data = await res.json();
             const cont = document.getElementById('itinerario');
             cont.innerHTML = ''; 
